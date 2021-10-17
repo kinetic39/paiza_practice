@@ -94,10 +94,10 @@ class Map
         a = 0
         b = 0
         @@h.times do |i|
-            @@w.times do |j|
-                if @@map[i][j] == 'A'
+            @@w.times do |to|
+                if @@map[i][to] == 'A'
                     a += 1
-                elsif @@map[i][j] == 'B'
+                elsif @@map[i][to] == 'B'
                     b += 1
                 end
             end
